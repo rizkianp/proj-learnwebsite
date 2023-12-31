@@ -1,7 +1,10 @@
-const myHeading = document.querySelector("h1");
-myHeading.textContent = "Hello World!";
+//const myHeading = document.querySelector("h1");
+//myHeading.textContent = "Hello World!";
 
 const myImage = document.querySelector("img");
+
+let myButton = document.querySelector("button")
+let myHeading = document.querySelector("h1")
 
 myImage.onclick = () => {
     const mySrc = myImage.getAttribute("src");
@@ -15,3 +18,25 @@ myImage.onclick = () => {
             myImage.setAttribute("src", "images/firefox-icon.png" );
         }
     };
+
+
+function setUserName() {
+    const myName = prompt("Please enter your name...");
+    if (!myName) {
+        setUserName();
+    } else {
+        localStorage.setItem("name", myName);
+        myHeading.textContent = `Mozilla is cool, ${myName}`;
+    }
+}
+
+if (!localStorage.getItem("name")) {
+    setUserName();
+} else {
+    const storedName = localStorage.getItem("name");
+    myHeading.textContent = `Mozilla is cool, ${myName}`;
+}
+
+myButton.onclick = () => {
+    setUserName();
+};
