@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Page Title</title>
+</head>
+<body>
+  <script>
+    // Your JavaScript goes here!
+    console.log("Hello, World!")
+
+    function add7(number) {
+        return number + 7
+    }
+
+    function multiply(a,b) {
+        return a*b
+    }
+
+    //capitalize letter
+    function capitalise(letter) {
+        return letter.toUpperCase()
+    }
+
+    function capitalisefirstletter(letter) {
+        let x = letter.toLowerCase();
+        let y= x.charAt(0).toUpperCase() + x.slice(1);
+        return y;
+    }
+
+    function lastLetter(x) {
+        let y = x.charAt(x.length -1);
+        return y
+    }
+
+    console.log(add7(3))
+    console.log(multiply(9,5))
+    console.log(capitalise("ultraman"))
+    console.log(capitalisefirstletter("alaAY loeAnJing"))
+    console.log(lastLetter("kontolle"))
+
+  </script>
+</body>
+</html>
