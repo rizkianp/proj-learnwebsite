@@ -2,6 +2,8 @@
 
 body {
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
@@ -35,17 +37,37 @@ body {
 
 .wa_button {
     border: none;
-    background-color: #85b751;
+    background-color: #1d1d1d;
     cursor: pointer;
     font-family: "Sriracha";
     font-size: larger; color: white;
     border-radius: 12px;
     transition-duration: 0.4s;
-    padding: 5px 30px;
+    padding: 5px 10px;
 }
 
 .wa_button:hover {
     background-color: grey;
+}
+
+#link_wa {
+    text-decoration: none;
+    color: white;
+}
+
+/* card paket image */
+.img_card {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 12px;
+    border: 3px solid black;
+    margin: 10px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.img_card:hover {
+    opacity: 0.7;
 }
 
 @media  screen and (max-width: 500px) {

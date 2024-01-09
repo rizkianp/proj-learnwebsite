@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Darul Haromain Umrah & Hajj</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="header">
@@ -15,10 +17,20 @@
             "Teman Setia Menuju Baitullah"
         </div>
         <div class="header-right">
-            <button class="wa_button"><img src="images/icon_wa.png" alt="icon whatsapp"> 083890397772</button>
+            <button class="wa_button"><a id="link_wa" href="https://wa.me/6283890397772?text=Assalamualaikum%20Saya%20tertarik%20untuk%20berangkat%20umrah%20bersama%20Darul%20Haromain" target="_blank"><i class="fa fa-whatsapp" style="font-size:24px;color: white;"></i> Chat Whatsapp Admin</a></button>
         </div>
-        
     </div>
-    
+    <div class="main">
+        <img class="img_card" src="images/umr-01.jpeg" alt="paket 01">
+    </div>   
+    <!-- MODAL STARTS HERE -->
+    <div id="myModal" class="modal">
+        <!-- Close button -->
+        <span class="close">&times;</span>
+        <!-- Modal Content (The Image) -->
+        <img class="modal_content" id="img01">
+         <!-- Modal Caption (Image Text) -->
+         <div id="caption"></div>
+    </div>
 </body>
 </html>
