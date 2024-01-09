@@ -1,9 +1,12 @@
-@import url(https://fonts.googleapis.com/css?family=Sriracha);
+@import url(https://fonts.googleapis.com/css?family=Kanit);
 
 body {
     margin: 0;
     display: flex;
     flex-direction: column;
+    background-image: url("images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .header {
@@ -20,7 +23,7 @@ body {
 
 .header-center {
     float: center;
-    font-family: "Sriracha";
+    font-family: "Kanit";
     font-size: larger; color: white;
     padding-top: 25px;
 }
@@ -39,7 +42,7 @@ body {
     border: none;
     background-color: #1d1d1d;
     cursor: pointer;
-    font-family: "Sriracha";
+    font-family: "Kanit";
     font-size: larger; color: white;
     border-radius: 12px;
     transition-duration: 0.4s;
@@ -61,14 +64,85 @@ body {
     max-width: 300px;
     border-radius: 12px;
     border: 3px solid black;
-    margin: 10px;
+    margin: 20px;
     cursor: pointer;
     transition-duration: 0.4s;
 }
 
+
 .img_card:hover {
     opacity: 0.7;
 }
+
+/* modal background */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1; /* set to be always on top */
+    padding-top: 100px;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    overflow: auto; /*enable autoscroll if image too big */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal_content {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    border-radius: 12px;
+  }
+
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+
+  /* Add Animation - Zoom in the Modal */
+.modal_content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 80px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
 
 @media  screen and (max-width: 500px) {
     .header {
