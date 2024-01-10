@@ -7,6 +7,7 @@
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <div class="header">
@@ -21,7 +22,17 @@
         </div>
     </div>
     <div class="main">
-        <img class="img_card" id="myImg" src="images/umr-01.jpeg" alt="paket 01" onclick="onClick(this)">
+        <div class ="card">
+            <div class="card_top_info">
+                <div class="top_info_green"><i class="material-symbols-outlined">calendar_month</i>  17 FEB 2024</div>
+                <div class="top_info_yellow"><span class="material-symbols-outlined">update</span>  13 Hari</div>
+            </div>
+            <img class="img_card" id="myImg" src="images/umr-01.jpeg" alt="paket 01" onclick="onClick(this)">
+            <div class="card_top_info">
+                <div class="top_info_red"><span class="material-symbols-outlined">group</span> SISA SEAT: 27 PAX</div>
+            </div>
+        </div>
+        
     </div>   
     <!-- MODAL STARTS HERE -->
     <div id="myModal" class="modal">
